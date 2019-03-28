@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50_dp"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:background="@color/colorPrimary"
+    app:contentInsetEnd="@dimen/dimen_0_dp"
+    app:contentInsetStart="@dimen/dimen_0_dp"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="@dimen/dimen_40_dp"
+            android:layout_height="@dimen/dimen_30_dp"
+            android:src="?attr/actionModeCloseDrawable"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/text_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_back"
+            android:layout_marginStart="@dimen/dimen_15_dp"
+            android:layout_marginEnd="@dimen/dimen_15_dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_18_sp"
+            android:text="@string/baking_time"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>
